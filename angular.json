@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "userRegistrationUi"
+  "defaultProject": "userRegistrationUi",
+  "cli": {
+    "analytics": false
+  }
 }

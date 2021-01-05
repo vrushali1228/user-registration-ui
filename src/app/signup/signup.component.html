@@ -1,0 +1,44 @@
+<form [formGroup]="userForm" class="form">
+  <div class="container">
+    <h3 class="center">Sign Up Form</h3>
+    <label for="name"><b>Username</b></label>
+    <input
+      type="text"
+      placeholder="Enter Username"
+      formControlName="name"
+      name="name"
+      required
+    />
+
+    <label for="mobileNo"><b>Mobile No.</b></label>
+    <input
+      type="text"
+      placeholder="Enter Mobile No."
+      formControlName="mobileNo"
+      name="mobileNo"
+      required
+    />
+
+    <label for="password"><b>Password</b></label>
+    <input
+      type="password"
+      placeholder="Enter Password"
+      formControlName="password"
+      name="password"
+      required
+    />
+
+    <button type="submit" (click)="onSubmit()">Sign Up</button>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+        <button type="button" class="cancelbtn margin-left" routerLink="">
+          Log In
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
